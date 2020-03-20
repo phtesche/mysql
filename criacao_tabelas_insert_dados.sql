@@ -1,5 +1,6 @@
 /*
 CRIANDO TABELA DE FORNECEDORES 
+INSERT DE FORNECEDORES
 */
 CREATE TABLE fornecedores (
 ID_FORNECEDOR int(4) AUTO_INCREMENT,
@@ -9,7 +10,19 @@ TELEFONE int(10),
 EMAIL varchar(50),
 PRIMARY KEY (ID_FORNECEDOR)
 );
-
+INSERT INTO `db_devmidia`.`fornecedores`
+(`ID_FORNECEDOR`,`NOME`,`DOCUMENTO`,`TELEFONE`,`EMAIL`)
+VALUES
+(1,'Brenda e Nathan Ltda', '97217471000198', 38834646, 'treinamento@danielerodrigocontabilltda.com.br'),
+(2,'CF Casa Noturna Ltda', 52849048000172, 25935950, 'vendas@clariceeflaviacasanoturnaltda.com.br'),
+(3,'Osvaldo e Ryan Padaria ME', 99664633000161, 27178683, 'seguranca@osvaldoeryanpadariame.com.br'),
+(4,'JeJ Marcenaria ME', 86621475000110, 37826418, 'ouvidoria@julianaejennifermarcenariame.com.br'),
+(5,'Consultoria Financeira ME', 55628950000157, 26896165, 'sultoriafinanceirame.com.br'),
+(6,'Rdita Marketing ME', 97513058000170, 35695154, 'representantes@ditamarketingme.com.br'),
+(7,'ReH Telas Ltda', 66613347000118, 1335967784, 'juridico@raquelehelenatelasltda.com.br'),
+(8, 'Locações de Automóveis ME', 47279920000154, 1135588250, 'atendimento@locacoesdeautomov.com.br'),
+(9, 'FH Lavanderia Ltda', 45817985000180, 1139562156, 'fabricacao@fhlavanderialtda.com.br'),
+(10, 'Cor Associados Ltda', 92957633000100, 29524047, 'financeiro@resassociadosltda.com.br');
 
 /*
 CRIANDO TABELA DE CLIENTES 
@@ -40,6 +53,7 @@ VALUES
  
 /*
 CRIANDO TABELA DE PRODUTOS
+INSERT DE PRODUTOS 
 */
 CREATE TABLE Produtos (
 ID_PRODUTO int(4) AUTO_INCREMENT,
@@ -48,6 +62,23 @@ VALOR REAL NOT NULL,
 CODIGO int(10),
 PRIMARY KEY (ID_PRODUTO)
 );
+INSERT INTO `db_devmidia`.`produtos`
+(`ID_PRODUTO`,`DESCRICAO`,`VALOR`,`CODIGO`)
+VALUES
+(1,'Control Drone S167', 473.00, 5950),
+(2,'Smart Base Aluminum Alloy', 296.00, 0950),
+(3,'MacBook Air 13', 9700.00, 2717),
+(4,'Fone De Ouvido Bluetooth', 56.00, 3782),
+(5,'Mini Micro HD Câmera', 153.00, 6165),
+(6,'SATA III 6Gbps 10TB', 760.00, 3154),
+(7,'SATA SSD 4TB', 510.00, 1384),
+(8, 'A Pair Headset', 704.00, 1135),
+(9, 'relógio inteligente bluetooth', 179.00, 2156),
+(11, 'Hot Sales Qi Wireless Power', 153.00, 2957),
+(12, 'Fonte Carregador Ultrabook', 100.00, 2437),
+(13, 'USB Wireless Mouse Optical', 20.00, 2957),
+(14, 'FDGAO 10W Fast Charger', 295.00, 2652),
+(15, 'Slim Wireless Keyboard', 295.00, 3612);
 
 
 /*
